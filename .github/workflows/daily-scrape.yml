@@ -36,7 +36,7 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
         run: |
           cd scraper
-          python scrape.py
+         python scrape.py --force
 
       - name: 提交数据到仓库
         run: |
